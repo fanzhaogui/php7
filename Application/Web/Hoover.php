@@ -21,6 +21,7 @@ class Hoover
                 $url = 'http://' . $url;
             }
 
+            // php.net/manual/en/class.domdocument.php
             $this->content = new \DOMDocument('1.0', 'utf-8');
             $this->content->preserveWhiteSpace = false;
             // @符号用于过滤掉配置错误的网页所生成的警告
@@ -46,6 +47,28 @@ class Hoover
             }
             $count ++;
         }
+        return $result;
+    }
+
+    // 提取属性
+    public function getAttribute($url, $attr, $domain = null)
+    {
+        $result = array();
+        $elements = $this->getContent($url)
+            ->getElementsByTagName('*');
+        foreach ($elements as $node) {
+            if ($node->hasAttribute($attr)) {
+                $value = $node->getAttribute($attr);
+                if ($domain) {
+                    if (stripos($value, $domain) !== false) {
+                        $result[] = trim($value);
+                    }
+                } else {
+                    $result[] = trim($value);
+                }
+            }
+        }
+
         return $result;
     }
 }
