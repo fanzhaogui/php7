@@ -21,4 +21,7 @@ $tag = strip_tags($_GET['tag'] ?? DEFAULT_TAG);
 
 
 //var_dump($vac->getContent($url));die;
-var_dump($vac->getTags($url, $tag));
+// var_dump($vac->getTags($url, $tag));
+
+
+var_dump($vac->getAttribute($url, 'href'));
