@@ -22,12 +22,13 @@ class Deep
     {
         $vac = new Hoover();
         $scan = $vac->getAttribute($url, 'href', $this->getDomain($url));
-        $result = array();
-
+        // $result = array();
         foreach ($scan as $subSite) {
             // 通过yield from语法，我们可以将这个数组用作子生成器
+            // $result[] = $vac->getTags($subSite, $tag);
             yield from $vac->getTags($subSite, $tag);
         }
+        // return $result;
         return count($scan);
     }
 
