@@ -1,0 +1,3 @@
+- 抽象语法树 Abstract Syntax Tree 简称 AST
+    - 语法一致性
+    - 复引用 dereferencing
