@@ -1,5 +1,24 @@
 <?php
 
+$foo = new class
+{
+    public $baz = ['bada' => 'boom'];
+};
+
+$bar = 'baz';
+echo $foo->$bar['bada']; // boom
+
+die;
+$foo = 'bar';
+$bar = ['bar' => ['baz' => 'bat']];
+
+echo $$foo['bar']['baz'];
+
+// bat 7.0 ， 从左往右 $bar['bar']['baz'] -- ['baz' => 'bzt]['bzt']
+// 5.5及以下报错，运行方式是从右往左 ${$foo['bar']['baz']}
+
+die;
+
 function test ()
 {
     return [
