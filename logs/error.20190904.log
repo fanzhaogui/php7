@@ -1,0 +1,37 @@
+2019/09/04 10:51:18 [error] 16844#22172: *23 FastCGI sent in stderr: "PHP Warning:  Uncaught RedisException: read error on connection in D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\session\driver\Redis.php:58
+Stack trace:
+#0 D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\session\driver\Redis.php(58): Redis->auth('123456')
+#1 [internal function]: think\session\driver\Redis->open('D:/Visual-NMP-x...', 'PHPSESSID')
+#2 D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\Session.php(106): session_start()
+#3 D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\Session.php(120): think\Session::init()
+#4 D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\Session.php(164): think\Session::boot()
+#5 D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\helper.php(322): think\Session::get('user_auth', NULL)
+#6 D:\Visual-NMP-x64\www\project_xmn\admin-project\application\common.php(38): session('user_auth')
+#7 D:\Visual-NMP-x64\www\project_xmn\admin-project\application\user\admin\Publics.php(128) in D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\session\driver\Redis.php on line 58
+PHP Stack trace:
+PHP   1. {main}() D:\Visual-NMP-x64\www\project_xmn\admin-project\public\flat.php:0
+PHP   2. require() D:\Visual-NMP-x64\www\project_xmn\admin-project\public\flat.php:53
+PHP   3. think\App::run() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\start.php:19
+PHP   4. think\App::exec() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:139
+PHP   5. think\App::module() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:456
+PHP   6. think\App::invokeMethod() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:594
+PHP   7. ReflectionMethod->invokeArgs() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:343
+PHP   8. app\user\admin\Publics->signin() D:\Visual-NMP-x64\www\project_xmn\admin
+2019/09/04 12:36:50 [error] 3240#21788: *36 FastCGI sent in stderr: "PHP Fatal error:  Animal and Cat define the same property ($color) in the composition of WhiteCat. However, the definition differs and is considered incompatible. Class was composed in D:\Visual-NMP-x64\www\Demo2\application\trait\base1.php on line 33
+PHP Stack trace:
+PHP   1. {main}() D:\Visual-NMP-x64\www\Demo2\application\trait\base1.php:0" while reading response header from upstream, client: 127.0.0.1, server: www.demo2.com, request: "GET /application/trait/base1.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9001", host: "www.demo2.com", referrer: "http://www.demo2.com/application/trait/"
+2019/09/04 12:44:32 [error] 3240#21788: *52 FastCGI sent in stderr: "PHP Fatal error:  Trait method drive has not been applied, because there are collisions with other trait methods on WhiteCat in D:\Visual-NMP-x64\www\Demo2\application\trait\base4.php on line 41
+PHP Stack trace:
+PHP   1. {main}() D:\Visual-NMP-x64\www\Demo2\application\trait\base4.php:0" while reading response header from upstream, client: 127.0.0.1, server: www.demo2.com, request: "GET /application/trait/base4.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9001", host: "www.demo2.com"
+2019/09/04 13:48:48 [error] 3240#21788: *63 FastCGI sent in stderr: "PHP Fatal error:  Trait method work has not been applied, because there are collisions with other trait methods on WhiteCat in D:\Visual-NMP-x64\www\Demo2\application\trait\base4.php on line 39
+PHP Stack trace:
+PHP   1. {main}() D:\Visual-NMP-x64\www\Demo2\application\trait\base4.php:0" while reading response header from upstream, client: 127.0.0.1, server: www.demo2.com, request: "GET /application/trait/base4.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9001", host: "www.demo2.com"
+2019/09/04 16:20:29 [error] 3240#21788: *1302 FastCGI sent in stderr: "PHP Fatal error:  Trait method work has not been applied, because there are collisions with other trait methods on WhiteCat in D:\Visual-NMP-x64\www\Demo2\application\trait\base4.php on line 39
+PHP Stack trace:
+PHP   1. {main}() D:\Visual-NMP-x64\www\Demo2\application\trait\base4.php:0" while reading response header from upstream, client: 127.0.0.1, server: www.demo2.com, request: "GET /application/trait/base4.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9001", host: "www.demo2.com"
+2019/09/04 16:45:30 [error] 3240#21788: *1311 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to protected method Cat::eat() from context '' in D:\Visual-NMP-x64\www\Demo2\application\trait\base5.php:29
+Stack trace:
+#0 {main}
+  thrown in D:\Visual-NMP-x64\www\Demo2\application\trait\base5.php on line 29" while reading response header from upstream, client: 127.0.0.1, server: www.demo2.com, request: "GET /application/trait/base5.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9001", host: "www.demo2.com"
+2019/09/04 21:04:24 [error] 3240#21788: *1355 CreateFile() "D:\Visual-NMP-x64\www\Demo2/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: www.demo2.com, request: "GET /favicon.ico HTTP/1.1", host: "www.demo2.com", referrer: "http://www.demo2.com/simple_page/spa.html"
+2019/09/04 21:04:58 [error] 3240#21788: *1355 CreateFile() "D:\Visual-NMP-x64\www\Demo2/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: www.demo2.com, request: "GET /favicon.ico HTTP/1.1", host: "www.demo2.com", referrer: "http://www.demo2.com/simple_page/spa.html"

@@ -1,0 +1,243 @@
+2019/09/02 10:12:37 [error] 11496#11576: *1 CreateFile() "D:\Visual-NMP-x64\www\Demo1/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: www.demo1.com, request: "GET /favicon.ico HTTP/1.1", host: "www.demo1.com", referrer: "http://www.demo1.com/log.php"
+2019/09/02 10:17:06 [error] 11496#11576: *9 FastCGI sent in stderr: "PHP Warning:  Uncaught RedisException: Redis server went away in D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\session\driver\Redis.php:58
+Stack trace:
+#0 D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\session\driver\Redis.php(58): Redis->auth(123456)
+#1 [internal function]: think\session\driver\Redis->open('D:/Visual-NMP-x...', 'PHPSESSID')
+#2 D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\Session.php(106): session_start()
+#3 D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\Session.php(120): think\Session::init()
+#4 D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\Session.php(164): think\Session::boot()
+#5 D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\helper.php(322): think\Session::get('user_auth', NULL)
+#6 D:\Visual-NMP-x64\www\project_xmn\admin-project\application\common.php(38): session('user_auth')
+#7 D:\Visual-NMP-x64\www\project_xmn\admin-project\application\admin\controller\Admin.php(241) in D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\session\driver\Redis.php on line 58
+PHP Stack trace:
+PHP   1. {main}() D:\Visual-NMP-x64\www\project_xmn\admin-project\public\flat.php:0
+PHP   2. require() D:\Visual-NMP-x64\www\project_xmn\admin-project\public\flat.php:53
+PHP   3. think\App::run() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\start.php:19
+PHP   4. think\App::exec() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:139
+PHP   5. think\App::module() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:456
+PHP   6. think\Loader::controller() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:570
+PHP   7. think\App::invokeClass() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\Loader.php:459
+PHP   8. ReflectionClass->newInstanceArgs() D:\Visual-NMP-x64\www\project_xmn\admin-
+2019/09/02 10:17:06 [error] 11496#11576: *9 FastCGI sent in stderr: "PHP Fatal error:  Uncaught RedisException: Redis server went away in D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\session\driver\Redis.php:75
+Stack trace:
+#0 D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\session\driver\Redis.php(75): Redis->close()
+#1 [internal function]: think\session\driver\Redis->close()
+#2 {main}
+  thrown in D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\session\driver\Redis.php on line 75
+PHP Stack trace:
+PHP   1. {main}() D:\Visual-NMP-x64\www\project_xmn\admin-project\public\flat.php:0
+PHP   2. require() D:\Visual-NMP-x64\www\project_xmn\admin-project\public\flat.php:53
+PHP   3. think\App::run() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\start.php:19
+PHP   4. think\App::exec() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:139
+PHP   5. think\App::module() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:456
+PHP   6. think\Loader::controller() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:570
+PHP   7. think\App::invokeClass() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\Loader.php:459
+PHP   8. ReflectionClass->newInstanceArgs() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:359
+PHP   9. think\Controller->__construct() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:359
+PHP  10. app\admin\controller\Admin->_initialize() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\Controller.php:59
+PHP  11. app\admin\controller\Admin->isLogin() D:\Visual-NMP-x64\www\project_xmn\admin-project\application\admin\controller\Admin.php:47
+PHP  12. is_signin() D:\Visual-NMP-x64\www\project_xmn\admin-project\application\admin\controller\Admin.php:241
+PHP  13. session() D:\Visual-NMP-x64\www\project_xmn\admin-project\application\common.php:38
+PHP  14. th
+2019/09/02 10:17:28 [error] 8636#7436: *1 FastCGI sent in stderr: "PHP Warning:  Uncaught RedisException: Redis server went away in D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\session\driver\Redis.php:58
+Stack trace:
+#0 D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\session\driver\Redis.php(58): Redis->auth(123456)
+#1 [internal function]: think\session\driver\Redis->open('D:/Visual-NMP-x...', 'PHPSESSID')
+#2 D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\Session.php(106): session_start()
+#3 D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\Session.php(120): think\Session::init()
+#4 D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\Session.php(164): think\Session::boot()
+#5 D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\helper.php(322): think\Session::get('user_auth', NULL)
+#6 D:\Visual-NMP-x64\www\project_xmn\admin-project\application\common.php(38): session('user_auth')
+#7 D:\Visual-NMP-x64\www\project_xmn\admin-project\application\admin\controller\Admin.php(241) in D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\session\driver\Redis.php on line 58
+PHP Stack trace:
+PHP   1. {main}() D:\Visual-NMP-x64\www\project_xmn\admin-project\public\flat.php:0
+PHP   2. require() D:\Visual-NMP-x64\www\project_xmn\admin-project\public\flat.php:53
+PHP   3. think\App::run() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\start.php:19
+PHP   4. think\App::exec() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:139
+PHP   5. think\App::module() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:456
+PHP   6. think\Loader::controller() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:570
+PHP   7. think\App::invokeClass() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\Loader.php:459
+PHP   8. ReflectionClass->newInstanceArgs() D:\Visual-NMP-x64\www\project_xmn\admin-pr
+2019/09/02 10:17:28 [error] 8636#7436: *1 FastCGI sent in stderr: "PHP Fatal error:  Uncaught RedisException: Redis server went away in D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\session\driver\Redis.php:75
+Stack trace:
+#0 D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\session\driver\Redis.php(75): Redis->close()
+#1 [internal function]: think\session\driver\Redis->close()
+#2 {main}
+  thrown in D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\session\driver\Redis.php on line 75
+PHP Stack trace:
+PHP   1. {main}() D:\Visual-NMP-x64\www\project_xmn\admin-project\public\flat.php:0
+PHP   2. require() D:\Visual-NMP-x64\www\project_xmn\admin-project\public\flat.php:53
+PHP   3. think\App::run() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\start.php:19
+PHP   4. think\App::exec() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:139
+PHP   5. think\App::module() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:456
+PHP   6. think\Loader::controller() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:570
+PHP   7. think\App::invokeClass() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\Loader.php:459
+PHP   8. ReflectionClass->newInstanceArgs() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:359
+PHP   9. think\Controller->__construct() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:359
+PHP  10. app\admin\controller\Admin->_initialize() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\Controller.php:59
+PHP  11. app\admin\controller\Admin->isLogin() D:\Visual-NMP-x64\www\project_xmn\admin-project\application\admin\controller\Admin.php:47
+PHP  12. is_signin() D:\Visual-NMP-x64\www\project_xmn\admin-project\application\admin\controller\Admin.php:241
+PHP  13. session() D:\Visual-NMP-x64\www\project_xmn\admin-project\application\common.php:38
+PHP  14. thin
+2019/09/02 10:19:34 [error] 8636#7436: *4 FastCGI sent in stderr: "PHP Warning:  Uncaught RedisException: Redis server went away in D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\session\driver\Redis.php:58
+Stack trace:
+#0 D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\session\driver\Redis.php(58): Redis->auth(123456)
+#1 [internal function]: think\session\driver\Redis->open('D:/Visual-NMP-x...', 'PHPSESSID')
+#2 D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\Session.php(106): session_start()
+#3 D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\Session.php(120): think\Session::init()
+#4 D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\Session.php(164): think\Session::boot()
+#5 D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\helper.php(322): think\Session::get('user_auth', NULL)
+#6 D:\Visual-NMP-x64\www\project_xmn\admin-project\application\common.php(38): session('user_auth')
+#7 D:\Visual-NMP-x64\www\project_xmn\admin-project\application\admin\controller\Admin.php(241) in D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\session\driver\Redis.php on line 58
+PHP Stack trace:
+PHP   1. {main}() D:\Visual-NMP-x64\www\project_xmn\admin-project\public\flat.php:0
+PHP   2. require() D:\Visual-NMP-x64\www\project_xmn\admin-project\public\flat.php:53
+PHP   3. think\App::run() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\start.php:19
+PHP   4. think\App::exec() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:139
+PHP   5. think\App::module() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:456
+PHP   6. think\Loader::controller() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:570
+PHP   7. think\App::invokeClass() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\Loader.php:459
+PHP   8. ReflectionClass->newInstanceArgs() D:\Visual-NMP-x64\www\project_xmn\admin-pr
+2019/09/02 10:19:34 [error] 8636#7436: *4 FastCGI sent in stderr: "PHP Fatal error:  Uncaught RedisException: Redis server went away in D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\session\driver\Redis.php:75
+Stack trace:
+#0 D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\session\driver\Redis.php(75): Redis->close()
+#1 [internal function]: think\session\driver\Redis->close()
+#2 {main}
+  thrown in D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\session\driver\Redis.php on line 75
+PHP Stack trace:
+PHP   1. {main}() D:\Visual-NMP-x64\www\project_xmn\admin-project\public\flat.php:0
+PHP   2. require() D:\Visual-NMP-x64\www\project_xmn\admin-project\public\flat.php:53
+PHP   3. think\App::run() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\start.php:19
+PHP   4. think\App::exec() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:139
+PHP   5. think\App::module() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:456
+PHP   6. think\Loader::controller() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:570
+PHP   7. think\App::invokeClass() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\Loader.php:459
+PHP   8. ReflectionClass->newInstanceArgs() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:359
+PHP   9. think\Controller->__construct() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:359
+PHP  10. app\admin\controller\Admin->_initialize() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\Controller.php:59
+PHP  11. app\admin\controller\Admin->isLogin() D:\Visual-NMP-x64\www\project_xmn\admin-project\application\admin\controller\Admin.php:47
+PHP  12. is_signin() D:\Visual-NMP-x64\www\project_xmn\admin-project\application\admin\controller\Admin.php:241
+PHP  13. session() D:\Visual-NMP-x64\www\project_xmn\admin-project\application\common.php:38
+PHP  14. thin
+2019/09/02 10:19:39 [error] 8636#7436: *9 FastCGI sent in stderr: "PHP Warning:  Uncaught RedisException: Redis server went away in D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\session\driver\Redis.php:58
+Stack trace:
+#0 D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\session\driver\Redis.php(58): Redis->auth(123456)
+#1 [internal function]: think\session\driver\Redis->open('D:/Visual-NMP-x...', 'PHPSESSID')
+#2 D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\Session.php(106): session_start()
+#3 D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\Session.php(120): think\Session::init()
+#4 D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\Session.php(164): think\Session::boot()
+#5 D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\helper.php(322): think\Session::get('user_auth', NULL)
+#6 D:\Visual-NMP-x64\www\project_xmn\admin-project\application\common.php(38): session('user_auth')
+#7 D:\Visual-NMP-x64\www\project_xmn\admin-project\application\admin\controller\Admin.php(241) in D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\session\driver\Redis.php on line 58
+PHP Stack trace:
+PHP   1. {main}() D:\Visual-NMP-x64\www\project_xmn\admin-project\public\flat.php:0
+PHP   2. require() D:\Visual-NMP-x64\www\project_xmn\admin-project\public\flat.php:53
+PHP   3. think\App::run() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\start.php:19
+PHP   4. think\App::exec() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:139
+PHP   5. think\App::module() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:456
+PHP   6. think\Loader::controller() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:570
+PHP   7. think\App::invokeClass() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\Loader.php:459
+PHP   8. ReflectionClass->newInstanceArgs() D:\Visual-NMP-x64\www\project_xmn\admin-pr
+2019/09/02 10:19:39 [error] 8636#7436: *9 FastCGI sent in stderr: "PHP Fatal error:  Uncaught RedisException: Redis server went away in D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\session\driver\Redis.php:75
+Stack trace:
+#0 D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\session\driver\Redis.php(75): Redis->close()
+#1 [internal function]: think\session\driver\Redis->close()
+#2 {main}
+  thrown in D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\session\driver\Redis.php on line 75
+PHP Stack trace:
+PHP   1. {main}() D:\Visual-NMP-x64\www\project_xmn\admin-project\public\flat.php:0
+PHP   2. require() D:\Visual-NMP-x64\www\project_xmn\admin-project\public\flat.php:53
+PHP   3. think\App::run() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\start.php:19
+PHP   4. think\App::exec() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:139
+PHP   5. think\App::module() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:456
+PHP   6. think\Loader::controller() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:570
+PHP   7. think\App::invokeClass() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\Loader.php:459
+PHP   8. ReflectionClass->newInstanceArgs() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:359
+PHP   9. think\Controller->__construct() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:359
+PHP  10. app\admin\controller\Admin->_initialize() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\Controller.php:59
+PHP  11. app\admin\controller\Admin->isLogin() D:\Visual-NMP-x64\www\project_xmn\admin-project\application\admin\controller\Admin.php:47
+PHP  12. is_signin() D:\Visual-NMP-x64\www\project_xmn\admin-project\application\admin\controller\Admin.php:241
+PHP  13. session() D:\Visual-NMP-x64\www\project_xmn\admin-project\application\common.php:38
+PHP  14. thin
+2019/09/02 10:19:56 [error] 8636#7436: *11 FastCGI sent in stderr: "PHP Warning:  Uncaught RedisException: Redis server went away in D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\session\driver\Redis.php:58
+Stack trace:
+#0 D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\session\driver\Redis.php(58): Redis->auth(123456)
+#1 [internal function]: think\session\driver\Redis->open('D:/Visual-NMP-x...', 'PHPSESSID')
+#2 D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\Session.php(106): session_start()
+#3 D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\Session.php(120): think\Session::init()
+#4 D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\Session.php(164): think\Session::boot()
+#5 D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\helper.php(322): think\Session::get('user_auth', NULL)
+#6 D:\Visual-NMP-x64\www\project_xmn\admin-project\application\common.php(38): session('user_auth')
+#7 D:\Visual-NMP-x64\www\project_xmn\admin-project\application\admin\controller\Admin.php(241) in D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\session\driver\Redis.php on line 58
+PHP Stack trace:
+PHP   1. {main}() D:\Visual-NMP-x64\www\project_xmn\admin-project\public\flat.php:0
+PHP   2. require() D:\Visual-NMP-x64\www\project_xmn\admin-project\public\flat.php:53
+PHP   3. think\App::run() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\start.php:19
+PHP   4. think\App::exec() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:139
+PHP   5. think\App::module() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:456
+PHP   6. think\Loader::controller() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:570
+PHP   7. think\App::invokeClass() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\Loader.php:459
+PHP   8. ReflectionClass->newInstanceArgs() D:\Visual-NMP-x64\www\project_xmn\admin-p
+2019/09/02 10:19:56 [error] 8636#7436: *11 FastCGI sent in stderr: "PHP Fatal error:  Uncaught RedisException: Redis server went away in D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\session\driver\Redis.php:75
+Stack trace:
+#0 D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\session\driver\Redis.php(75): Redis->close()
+#1 [internal function]: think\session\driver\Redis->close()
+#2 {main}
+  thrown in D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\session\driver\Redis.php on line 75
+PHP Stack trace:
+PHP   1. {main}() D:\Visual-NMP-x64\www\project_xmn\admin-project\public\flat.php:0
+PHP   2. require() D:\Visual-NMP-x64\www\project_xmn\admin-project\public\flat.php:53
+PHP   3. think\App::run() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\start.php:19
+PHP   4. think\App::exec() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:139
+PHP   5. think\App::module() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:456
+PHP   6. think\Loader::controller() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:570
+PHP   7. think\App::invokeClass() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\Loader.php:459
+PHP   8. ReflectionClass->newInstanceArgs() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:359
+PHP   9. think\Controller->__construct() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:359
+PHP  10. app\admin\controller\Admin->_initialize() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\Controller.php:59
+PHP  11. app\admin\controller\Admin->isLogin() D:\Visual-NMP-x64\www\project_xmn\admin-project\application\admin\controller\Admin.php:47
+PHP  12. is_signin() D:\Visual-NMP-x64\www\project_xmn\admin-project\application\admin\controller\Admin.php:241
+PHP  13. session() D:\Visual-NMP-x64\www\project_xmn\admin-project\application\common.php:38
+PHP  14. thi
+2019/09/02 10:20:18 [error] 14216#14300: *1 FastCGI sent in stderr: "PHP Warning:  Uncaught RedisException: Redis server went away in D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\session\driver\Redis.php:58
+Stack trace:
+#0 D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\session\driver\Redis.php(58): Redis->auth(123456)
+#1 [internal function]: think\session\driver\Redis->open('D:/Visual-NMP-x...', 'PHPSESSID')
+#2 D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\Session.php(106): session_start()
+#3 D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\Session.php(120): think\Session::init()
+#4 D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\Session.php(164): think\Session::boot()
+#5 D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\helper.php(322): think\Session::get('user_auth', NULL)
+#6 D:\Visual-NMP-x64\www\project_xmn\admin-project\application\common.php(38): session('user_auth')
+#7 D:\Visual-NMP-x64\www\project_xmn\admin-project\application\admin\controller\Admin.php(241) in D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\session\driver\Redis.php on line 58
+PHP Stack trace:
+PHP   1. {main}() D:\Visual-NMP-x64\www\project_xmn\admin-project\public\flat.php:0
+PHP   2. require() D:\Visual-NMP-x64\www\project_xmn\admin-project\public\flat.php:53
+PHP   3. think\App::run() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\start.php:19
+PHP   4. think\App::exec() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:139
+PHP   5. think\App::module() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:456
+PHP   6. think\Loader::controller() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:570
+PHP   7. think\App::invokeClass() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\Loader.php:459
+PHP   8. ReflectionClass->newInstanceArgs() D:\Visual-NMP-x64\www\project_xmn\admin-
+2019/09/02 10:20:18 [error] 14216#14300: *1 FastCGI sent in stderr: "PHP Fatal error:  Uncaught RedisException: Redis server went away in D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\session\driver\Redis.php:75
+Stack trace:
+#0 D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\session\driver\Redis.php(75): Redis->close()
+#1 [internal function]: think\session\driver\Redis->close()
+#2 {main}
+  thrown in D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\session\driver\Redis.php on line 75
+PHP Stack trace:
+PHP   1. {main}() D:\Visual-NMP-x64\www\project_xmn\admin-project\public\flat.php:0
+PHP   2. require() D:\Visual-NMP-x64\www\project_xmn\admin-project\public\flat.php:53
+PHP   3. think\App::run() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\start.php:19
+PHP   4. think\App::exec() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:139
+PHP   5. think\App::module() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:456
+PHP   6. think\Loader::controller() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:570
+PHP   7. think\App::invokeClass() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\Loader.php:459
+PHP   8. ReflectionClass->newInstanceArgs() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:359
+PHP   9. think\Controller->__construct() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\App.php:359
+PHP  10. app\admin\controller\Admin->_initialize() D:\Visual-NMP-x64\www\project_xmn\admin-project\thinkphp\library\think\Controller.php:59
+PHP  11. app\admin\controller\Admin->isLogin() D:\Visual-NMP-x64\www\project_xmn\admin-project\application\admin\controller\Admin.php:47
+PHP  12. is_signin() D:\Visual-NMP-x64\www\project_xmn\admin-project\application\admin\controller\Admin.php:241
+PHP  13. session() D:\Visual-NMP-x64\www\project_xmn\admin-project\application\common.php:38
+PHP  14. th
+2019/09/02 16:39:20 [error] 14216#14300: *130 upstream timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while reading response header from upstream, client: 192.168.4.91, server: fzgapi.xmnjdwx.com, request: "POST /test/WmTest_testStatementsServiceHandleOrders?XDEBUG_SESSION_START=13076 HTTP/1.0", upstream: "fastcgi://127.0.0.1:9001", host: "fzgapi.xmnjdwx.com"
+2019/09/02 16:58:26 [error] 14216#14300: *142 CreateFile() "D:\Visual-NMP-x64\www\Demo1/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: www.demo1.com, request: "GET /favicon.ico HTTP/1.1", host: "www.demo1.com", referrer: "http://www.demo1.com/log.php"

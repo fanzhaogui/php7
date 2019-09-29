@@ -1,0 +1,1 @@
+2019/09/02 09:40:13 [error] 5556#5636: *2 CreateFile() "D:\Visual-NMP-x64\www\Demo1/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: www.demo1.com, request: "GET /favicon.ico HTTP/1.1", host: "www.demo1.com", referrer: "http://www.demo1.com/log.php"

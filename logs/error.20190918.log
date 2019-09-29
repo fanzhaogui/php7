@@ -1,0 +1,76 @@
+2019/09/18 14:48:40 [error] 5380#5432: *40 CreateFile() "D:\Visual-NMP-x64\www\Demo1/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: www.demo1.com, request: "GET /favicon.ico HTTP/1.1", host: "www.demo1.com", referrer: "http://www.demo1.com/todos/array_map.php"
+2019/09/18 14:48:48 [error] 5380#5432: *42 FastCGI sent in stderr: "PHP Warning:  Missing argument 2 for Solution::{closure}() in D:\Visual-NMP-x64\www\Demo2\todos\array_map.php on line 17
+PHP Stack trace:
+PHP   1. {main}() D:\Visual-NMP-x64\www\Demo2\todos\array_map.php:0
+PHP   2. Solution::twoSum() D:\Visual-NMP-x64\www\Demo2\todos\array_map.php:30
+PHP   3. array_map() D:\Visual-NMP-x64\www\Demo2\todos\array_map.php:19
+PHP   4. Solution::{closure:D:\Visual-NMP-x64\www\Demo2\todos\array_map.php:17-19}() D:\Visual-NMP-x64\www\Demo2\todos\array_map.php:19
+PHP Warning:  Missing argument 2 for Solution::{closure}() in D:\Visual-NMP-x64\www\Demo2\todos\array_map.php on line 17
+PHP Stack trace:
+PHP   1. {main}() D:\Visual-NMP-x64\www\Demo2\todos\array_map.php:0
+PHP   2. Solution::twoSum() D:\Visual-NMP-x64\www\Demo2\todos\array_map.php:30
+PHP   3. array_map() D:\Visual-NMP-x64\www\Demo2\todos\array_map.php:19
+PHP   4. Solution::{closure:D:\Visual-NMP-x64\www\Demo2\todos\array_map.php:17-19}() D:\Visual-NMP-x64\www\Demo2\todos\array_map.php:19
+PHP Warning:  Missing argument 2 for Solution::{closure}() in D:\Visual-NMP-x64\www\Demo2\todos\array_map.php on line 17
+PHP Stack trace:
+PHP   1. {main}() D:\Visual-NMP-x64\www\Demo2\todos\array_map.php:0
+PHP   2. Solution::twoSum() D:\Visual-NMP-x64\www\Demo2\todos\array_map.php:30
+PHP   3. array_map() D:\Visual-NMP-x64\www\Demo2\todos\array_map.php:19
+PHP   4. Solution::{closure:D:\Visual-NMP-x64\www\Demo2\todos\array_map.php:17-19}() D:\Visual-NMP-x64\www\Demo2\todos\array_map.php:19" while reading response header from upstream, client: 127.0.0.1, server: www.demo2.com, request: "GET /todos/array_map.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9001", host: "www.demo2.com"
+2019/09/18 14:48:48 [error] 5380#5432: *42 FastCGI sent in stderr: "PHP Warning:  Missing argument 2 for Solution::{closure}() in D:\Visual-NMP-x64\www\Demo2\todos\array_map.php on line 17
+PHP Stack trace:
+PHP   1. {main}() D:\Visual-NMP-x64\www\Demo2\todos\array_map.php:0
+PHP   2. Solution::twoSum() D:\Visual-NMP-x64\www\Demo2\todos\array_map.php:30
+PHP   3. array_map() D:\Visual-NMP-x64\www\Demo2\todos\array_map.php:19
+PHP   4. Solution::{closure:D:\Visual-NMP-x64\www\Demo2\todos\array_map.php:17-19}() D:\Visual-NMP-x64\www\Demo2\todos\array_map.ph" while reading upstream, client: 127.0.0.1, server: www.demo2.com, request: "GET /todos/array_map.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9001", host: "www.demo2.com"
+2019/09/18 14:48:48 [error] 5380#5432: *42 FastCGI sent in stderr: "p:19
+PHP Warning:  Missing argument 2 for Solution::{closure}() in D:\Visual-NMP-x64\www\Demo2\todos\array_map.php on line 17
+PHP Stack trace:
+PHP   1. {main}() D:\Visual-NMP-x64\www\Demo2\todos\array_map.php:0
+PHP   2. Solution::twoSum() D:\Visual-NMP-x64\www\Demo2\todos\array_map.php:30
+PHP   3. array_map() D:\Visual-NMP-x64\www\Demo2\todos\array_map.php:19
+PHP   4. Solution::{closure:D:\Visual-NMP-x64\www\Demo2\todos\array_map.php:17-19}() D:\Visual-NMP-x64\www\Demo2\todos\array_map.php:19" while reading upstream, client: 127.0.0.1, server: www.demo2.com, request: "GET /todos/array_map.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9001", host: "www.demo2.com"
+2019/09/18 16:18:54 [error] 20752#19276: *1 FastCGI sent in stderr: "PHP Warning:  require(D:\Visual-NMP-x64\www\lar\xiaomi\vendor\composer/../symfony/polyfill-mbstring/bootstrap.php): failed to open stream: No such file or directory in D:\Visual-NMP-x64\www\lar\xiaomi\vendor\composer\autoload_real.php on line 66
+PHP Stack trace:
+PHP   1. {main}() D:\Visual-NMP-x64\www\lar\xiaomi\public\index.php:0
+PHP   2. require() D:\Visual-NMP-x64\www\lar\xiaomi\public\index.php:22
+PHP   3. require() D:\Visual-NMP-x64\www\lar\xiaomi\bootstrap\autoload.php:17
+PHP   4. ComposerAutoloaderInit49e47f7d0c8866751a0661e26ea1d268::getLoader() D:\Visual-NMP-x64\www\lar\xiaomi\vendor\autoload.php:7
+PHP   5. composerRequire49e47f7d0c8866751a0661e26ea1d268() D:\Visual-NMP-x64\www\lar\xiaomi\vendor\composer\autoload_real.php:56
+PHP Fatal error:  require(): Failed opening required 'D:\Visual-NMP-x64\www\lar\xiaomi\vendor\composer/../symfony/polyfill-mbstring/bootstrap.php' (include_path='.;C:\php\pear') in D:\Visual-NMP-x64\www\lar\xiaomi\vendor\composer\autoload_real.php on line 66
+PHP Stack trace:
+PHP   1. {main}() D:\Visual-NMP-x64\www\lar\xiaomi\public\index.php:0
+PHP   2. require() D:\Visual-NMP-x64\www\lar\xiaomi\public\index.php:22
+PHP   3. require() D:\Visual-NMP-x64\www\lar\xiaomi\bootstrap\autoload.php:17
+PHP   4. ComposerAutoloaderInit49e47f7d0c8866751a0661e26ea1d268::getLoader() D:\Visual-NMP-x64\www\lar\xiaomi\vendor\autoload.php:7
+PHP   5. composerRequire49e47f7d0c8866751a0661e26ea1d268() D:\Visual-NMP-x64\www\lar\xiaomi\vendor\composer\autoload_real.php:56" while reading response header from upstream, client: 127.0.0.1, server: web.xiaomi.com, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9001", host: "web.xiaomi.com"
+2019/09/18 16:25:00 [error] 20752#19276: *4 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in D:\Visual-NMP-x64\www\lar\xiaomi\bootstrap\app.php:14
+Stack trace:
+#0 D:\Visual-NMP-x64\www\lar\xiaomi\public\index.php(36): require_once()
+#1 {main}
+  thrown in D:\Visual-NMP-x64\www\lar\xiaomi\bootstrap\app.php on line 14" while reading response header from upstream, client: 127.0.0.1, server: web.xiaomi.com, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9001", host: "web.xiaomi.com"
+2019/09/18 16:25:00 [error] 20752#19276: *4 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in D:\Visual-NMP-x64\www\lar\xiaomi\bootstrap\app.php:14
+Stack trace:
+#0 D:\Visual-NMP-x64\www\lar\xiaomi\public\index.php(36): require_once()
+#1 {main}
+  thrown in D:\Visual-NMP-x64\www\lar\xiaomi\bootstrap\app.php on line 14" while reading response header from upstream, client: 127.0.0.1, server: web.xiaomi.com, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9001", host: "web.xiaomi.com"
+2019/09/18 16:25:01 [error] 20752#19276: *4 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in D:\Visual-NMP-x64\www\lar\xiaomi\bootstrap\app.php:14
+Stack trace:
+#0 D:\Visual-NMP-x64\www\lar\xiaomi\public\index.php(36): require_once()
+#1 {main}
+  thrown in D:\Visual-NMP-x64\www\lar\xiaomi\bootstrap\app.php on line 14" while reading response header from upstream, client: 127.0.0.1, server: web.xiaomi.com, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9001", host: "web.xiaomi.com"
+2019/09/18 16:25:01 [error] 20752#19276: *4 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in D:\Visual-NMP-x64\www\lar\xiaomi\bootstrap\app.php:14
+Stack trace:
+#0 D:\Visual-NMP-x64\www\lar\xiaomi\public\index.php(36): require_once()
+#1 {main}
+  thrown in D:\Visual-NMP-x64\www\lar\xiaomi\bootstrap\app.php on line 14" while reading response header from upstream, client: 127.0.0.1, server: web.xiaomi.com, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9001", host: "web.xiaomi.com"
+2019/09/18 16:25:01 [error] 20752#19276: *4 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in D:\Visual-NMP-x64\www\lar\xiaomi\bootstrap\app.php:14
+Stack trace:
+#0 D:\Visual-NMP-x64\www\lar\xiaomi\public\index.php(36): require_once()
+#1 {main}
+  thrown in D:\Visual-NMP-x64\www\lar\xiaomi\bootstrap\app.php on line 14" while reading response header from upstream, client: 127.0.0.1, server: web.xiaomi.com, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9001", host: "web.xiaomi.com"
+2019/09/18 16:26:27 [error] 20752#19276: *11 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in D:\Visual-NMP-x64\www\lar\xiaomi\bootstrap\app.php:14
+Stack trace:
+#0 D:\Visual-NMP-x64\www\lar\xiaomi\public\index.php(36): require_once()
+#1 {main}
+  thrown in D:\Visual-NMP-x64\www\lar\xiaomi\bootstrap\app.php on line 14" while reading response header from upstream, client: 127.0.0.1, server: web.xiaomi.com, request: "GET /admin/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9001", host: "web.xiaomi.com"
