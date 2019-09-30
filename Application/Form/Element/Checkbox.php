@@ -17,14 +17,14 @@ use Application\Form\Generic;
  * Class Radio
  * @package Application\Form\Element
  */
-class Radio extends Generic
+class Checkbox extends Generic
 {
     // 文字显示在点选框的后，还是前面
     const DEFAULT_AFTER = TRUE;
     // 每个radio的分隔
     const DEFAULT_SPACER = '&nbsp;';
 
-    const DEFAULT_OPTION_KEY = 0;
+    const DEFAULT_OPTION_KEY = [];
 
     const DEFAULT_OPTION_VALUE = 'Choose';
 
@@ -57,24 +57,11 @@ class Radio extends Generic
             $this->attributes['id'] = $baseId . $count++;
             $this->attributes['value'] = $key;
 
-            // radio
-            if ($this->type == self::TYPE_RADIO) {
-                if ($this->selectedKey == $key) {
-                    $this->attributes['checked'] = '';
-                }
-                else {
-                    unset($this->attributes['checked']);
-                }
+            if ($this->selectedKey && in_array($key, $this->selectedKey)) {
+                $this->attributes['checked'] = '';
             }
-
-            // checkbox
-            if ($this->type == self::TYPE_CHECKBOX) {
-                if ($this->selectedKey && in_array($key, $this->selectedKey)) {
-                    $this->attributes['checked'] = '';
-                }
-                else {
-                    unset($this->attributes['checked']);
-                }
+            else {
+                unset($this->attributes['checked']);
             }
 
             if ($this->after) {

@@ -12,6 +12,7 @@ require  __DIR__ . '/../Application/Autoload/Loader.php';
 
 use Application\Form\Generic;
 use Application\Form\Element\Radio;
+use Application\Form\Element\Checkbox;
 
 $wrappers = [
     Generic::INPUT => ['type' => 'td', 'class' => 'content'],
@@ -34,6 +35,21 @@ $status = new Radio('status', Generic::TYPE_RADIO, "Status", $wrappers, [
 $checked = $_GET['status'] ?? 'U';
 $status->setOptions($statusList, $checked, '<br>', true);
 
+// checkbox
+$ballList = [
+    'A' => 'FootBall',
+    'B' => 'BasketBall',
+    'C' => 'BingBang',
+    'D' => 'Approved',
+];
+
+$hobby = new Radio('hobby[]', Generic::TYPE_CHECKBOX, 'Hobby', $wrappers, [
+    'id' => 'hobby'
+]);
+
+$checkeds = $_GET['hobby'] ?? [];
+$hobby->setOptions($ballList, $checkeds, '<br>', true);
+
 $submit = new Generic('submit', Generic::TYPE_SUBMIT, 'Process', $wrappers, [
     'id' => 'submit',
     'title' => 'Click to Process',
@@ -51,18 +67,19 @@ $submit = new Generic('submit', Generic::TYPE_SUBMIT, 'Process', $wrappers, [
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
-<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+    <!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
 
 
     <title>Document</title>
 </head>
 <body>
 
-<h1>Login</h1>
+<h1>Form Element</h1>
 
 <form action="" name="login">
     <table id="login" class="display" border="1" cellspacing="0" width="100%">
         <tr><?= $status->render();?></tr>
+        <tr><?= $hobby->render();?></tr>
         <tr><?= $submit->render();?></tr>
         <tr>
             <td colspan="2">
