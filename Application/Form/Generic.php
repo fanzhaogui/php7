@@ -159,10 +159,12 @@ class Generic
         if (!$this->errors || count($this->errors) == 0) return '';
         $html = '';
         $pattern = '<li>%s</li>';
+        $html .= '<ul>';
+
         foreach ($this->errors as $error) {
             $html .= sprintf($pattern, $error);
         }
-        $html .= '<ul>';
+
         $html .= '</ul>';
 
         return sprintf($this->getWrapperPattern(self::ERRORS), $html);
