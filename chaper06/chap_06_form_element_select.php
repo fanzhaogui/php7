@@ -27,13 +27,24 @@ $ballList = [
     'D' => 'Approved',
 ];
 
-$hobby = new Select('hobby', Generic::TYPE_CHECKBOX, 'Hobby', $wrappers, [
+// 下拉单选
+$hobby = new Select('hobby', Generic::TYPE_SELECT, 'Hobby', $wrappers, [
     'id' => 'hobby',
-    'multiple' => true,
+    // 'multiple' => true, // 下拉框，单选和多选
 ]);
 
 $checkeds = $_GET['hobby'] ?? [];
 $hobby->setOptions($ballList, $checkeds);
+
+// 下拉多选
+$hobby2 = new Select('hobby2', Generic::TYPE_SELECT, 'Hobby mul', $wrappers, [
+    'id' => 'hobby2',
+    'multiple' => true, // 下拉框，单选和多选
+    'size' => '4'
+]);
+
+$checkeds2 = $_GET['hobby2'] ?? [];
+$hobby2->setOptions($ballList, $checkeds2);
 
 $submit = new Generic('submit', Generic::TYPE_SUBMIT, 'Process', $wrappers, [
     'id' => 'submit',
@@ -59,6 +70,7 @@ $submit = new Generic('submit', Generic::TYPE_SUBMIT, 'Process', $wrappers, [
 <form action="" name="login">
     <table id="login" class="display" border="1" cellspacing="0" width="100%">
         <tr><?= $hobby->render();?></tr>
+        <tr><?= $hobby2->render();?></tr>
         <tr><?= $submit->render();?></tr>
         <tr>
             <td colspan="2">
