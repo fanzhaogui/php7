@@ -1,1 +1,0 @@
-2019/09/12 10:44:41 [error] 18756#18412: *52 FastCGI sent in stderr: "PHP Parse error:  syntax error, unexpected '=' in D:\Visual-NMP-x64\www\Demo1\log.php on line 7" while reading response header from upstream, client: 127.0.0.1, server: www.demo1.com, request: "GET /log.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9001", host: "www.demo1.com"

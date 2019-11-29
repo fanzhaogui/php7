@@ -1,1 +1,0 @@
-2019/09/17 19:13:01 [error] 5380#5432: *39 CreateFile() "D:\Visual-NMP-x64\www\Demo2/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: www.demo2.com, request: "GET /favicon.ico HTTP/1.1", host: "www.demo2.com", referrer: "http://www.demo2.com/simple_page/spa/spa.html"
