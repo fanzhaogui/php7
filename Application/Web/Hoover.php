@@ -40,6 +40,7 @@ class Hoover
 
         foreach ($elements as $node) {
             $result[$count]['value'] = trim(preg_replace('/\s+/',  ' ', $node->nodeValue));
+            /**@var $node \DOMNode*/
             if ($node->hasAttributes()) {
                 foreach ($node->attributes as $name => $attr) {
                     $result[$count]['attributes'][$name] = $attr->value;
@@ -57,6 +58,7 @@ class Hoover
         $elements = $this->getContent($url)
             ->getElementsByTagName('*');
         foreach ($elements as $node) {
+            /**@var $node \DOMElement*/
             if ($node->hasAttribute($attr)) {
                 $value = $node->getAttribute($attr);
                 if ($domain) {

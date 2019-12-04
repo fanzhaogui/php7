@@ -8,11 +8,14 @@
 
 require __DIR__ . '/../Application/Autoload/Loader.php';
 
-Application\Autoload\Loader::init(__DIR__ . '/..');
+use Application\Autoload\Loader;
+Loader::init(__DIR__ . '/../'); // 将根加入
 
 // 存在
-$test = new Application\Test\TestClass();
-echo "correct : " . $test->getTest();
+use Application\Test\TestClass;
+$test = new TestClass();
+
+echo "Correct : " . $test->getTest();
 echo "<br/>";
 
 // 不存在
@@ -22,7 +25,7 @@ try {
 
 } catch (Exception $e) {
 
-    echo "class is not exists ,the error : " . $e->getMessage();
+    echo "ERROR : class is not exists ,the error : " . $e->getMessage();
 }
 
 

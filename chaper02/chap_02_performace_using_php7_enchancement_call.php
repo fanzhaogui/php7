@@ -12,8 +12,11 @@ define('LOG_FILES', '../logs/*error*.log');
 
 require __DIR__ . '/../Application/Autoload/Loader.php';
 
+use Application\Autoload\Loader;
+use Application\Web\Access;
+
 // add current directory to the path
-\Application\Autoload\Loader::init(__DIR__ . '/..');
+Loader::init(__DIR__ . '/..');
 
 $frequency = [];
 
@@ -33,7 +36,8 @@ $freq = function ($line) {
 // func glob() 可以获取正则匹配的所有文件
 foreach (glob(LOG_FILES) as $fileName) {
     echo  $fileName . "<br>";
-    $access = new \Application\Web\Access($fileName);
+    /**@var $access SplFileObject*/
+    $access = new Access($fileName);
     foreach ($access->fileIteratorByLine() as $line) {
         $freq->call($access, $line);
     }

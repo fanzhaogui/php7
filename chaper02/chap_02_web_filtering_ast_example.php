@@ -8,12 +8,15 @@
 
 require __DIR__  . '/../Application/Autoload/Loader.php';
 
-\Application\Autoload\Loader::init(__DIR__ . '/..');
+use Application\Autoload\Loader;
+use Application\Web\Securityclass;
 
-$security = new \Application\Web\Securityclass();
+Loader::init(__DIR__ . '/..');
+
+$security = new Securityclass();
 
 $data = [
-    '<ul><li>Lots</li><li>of</li><li>Tags</li></ul>',
+    '<ul><li>Lots</li><li>Of</li><li>Tags</li></ul>',
     123456,
     'This is a string',
     'String with number 123456'

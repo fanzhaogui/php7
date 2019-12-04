@@ -15,8 +15,10 @@ namespace Application\Web;
  */
 class Securityclass
 {
+    // 过滤函数
     public $filter = NULL;
 
+    // 验证函数
     public $validate = NULL;
 
 

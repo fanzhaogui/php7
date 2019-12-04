@@ -1,3 +1,24 @@
+## 读取大文件
+
+PHP 标准库( SPL : Standard PHP Library )中的 SplFileObject::class 
+
+[SPL-大文件读取和写入数据库](./chaper02/chap_02_uploading_csv_to_database.php)
+
+
+## 抽象语法树 Abstract Syntax Tree AST
+
+dereference 复用： 是指立刻获取对象的属性，运行对象中的某个方法，访问数组中的某个元素，调用某个回调函数的操作。
+
+
+## 错误和异常
+PHP7 已经改变了处理错误的方式。在某些情况中，一些类似的错误会被划分到同一个异常类别中，
+而且这些异常能够捕捉到！
+
+Error 和 Exception 类都实现了 Throwable 接口。如果你想要捕捉 ERROR 或 Exception 异常，可捕捉Throwable 接口。
+
+
+## 其他
+
 [代码同时运行在多个版本的PHP](https://3v4l.org/)
 
 [PHPUnit的使用](https://phpunit.de)
