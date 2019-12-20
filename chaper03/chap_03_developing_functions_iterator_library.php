@@ -53,6 +53,7 @@ function fetchCountryName($sql, $connection) {
 
 
 // 起过滤作用的方法
+// 该方法将部分国家名称和ArraryIterator实例作为其参数来接收
 /**@var $innerIterator ArrayIterator */
 function nameFilterIterator ($innerIterator, $name)
 {
@@ -66,7 +67,7 @@ function nameFilterIterator ($innerIterator, $name)
     return $iterator;
 }
 
-
+// 返回数据$array中符合条件的组，数组不为空时
 function filteredResultGenerator(array $array, $filter, $limit = 10, $page = 0)
 {
     $max = count($array);
@@ -114,3 +115,23 @@ function someBoolHint (bool $b) {
     // TypeError instanceof Throwable
     echo $e->getMessage();
 }*/
+
+
+/*匿名类*/
+$a = [];
+$i = new ArrayIterator($a);
+$f = new class($i) extends FilterIterator {
+	public function accept()
+	{
+		$current = $this->current();
+		return !(ord($current) & 1);
+	}
+};
+// 该实例中，匿名类扩展了FilterIterator类并重写了accept()方法，使该方法仅接收ASCII码为偶数的字母：
+
+
+
+function pagination($iterator, $offset, $limit)
+{
+
+}
