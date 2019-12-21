@@ -34,7 +34,18 @@ class Connection
         try {
             $this->pdo = new PDO($dsn, $config['user'], $config['password'], [PDO::ATTR_ERRMODE => $config['errmode']]);
         } catch (\PDOException $e) {
-            error_log($e->getMessage() , '', 'err' . date("y_m_d_") .'.log');
+			var_dump($e->getMessage());
         }
     }
+
+
+    public static function factory($drive, $dbname, $host, $user, $pwd, array $option = [])
+	{
+		$dsn = sprintf("%s:dbname=%s;host=%s", $drive, $dbname, $host);
+		try {
+			return new PDO($dsn, $user, $pwd, $option);
+		} catch (\PDOException $e) {
+			var_dump($e->getMessage());
+		}
+	}
 }
