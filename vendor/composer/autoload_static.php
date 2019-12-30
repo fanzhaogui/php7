@@ -27,6 +27,7 @@ class ComposerStaticInit79974082b419d20c6c0bb675df5e32c4
         ),
         'P' => 
         array (
+            'Psr\\Http\\Message\\' => 17,
             'Prophecy\\' => 9,
         ),
         'D' => 
@@ -54,6 +55,10 @@ class ComposerStaticInit79974082b419d20c6c0bb675df5e32c4
         'Symfony\\Component\\Yaml\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/yaml',
+        ),
+        'Psr\\Http\\Message\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Prophecy\\' => 
         array (
