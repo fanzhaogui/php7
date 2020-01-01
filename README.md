@@ -46,6 +46,7 @@ window下使用composer安装
 
 > $:  phpunit --verbose [filename]
 
+`composer require psr/http-message`
 
 ## 过滤和验证
 
